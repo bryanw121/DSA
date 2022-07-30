@@ -1,0 +1,1 @@
+ree.insert(7)
