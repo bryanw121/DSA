@@ -42,8 +42,8 @@ class MaxBinaryHeap {
             rightChildIndex = parentIndex*2+2;
 
             // assigning maxChildIndex
-            if (this.values[leftChildIndex]>this.values[rightChildIndex]) maxChildIndex = this.values[leftChildIndex]
-            else maxChildIndex = this.values[rightChildIndex];
+            if (this.values[leftChildIndex]>this.values[rightChildIndex]) maxChildIndex = leftChildIndex
+            else maxChildIndex = rightChildIndex;
 
             // assigning both parentElement and maxChildElement for the next comparison
             parentElement = this.values[parentIndex]
@@ -65,4 +65,11 @@ heap.insert(27)
 heap.insert(12)
 heap.insert(55)
 heap.extractMax()
+heap.extractMax()
+heap.extractMax()
+heap.extractMax()
+heap.extractMax()
+heap.extractMax()
+heap.extractMax()
+
 console.log(heap)
